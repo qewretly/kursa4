@@ -1,0 +1,188 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin-top: 70px;
+}
+
+/* Шапка */
+.navbar {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+}
+
+.navbar-brand {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #007BFF !important;
+    margin-right: 2rem;
+    position: relative;
+    left: -10px;
+}
+
+/* Кнопки в шапке */
+.nav-link.nav-btn {
+    font-size: 1.05rem;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    color: white !important;
+    background-color: #007BFF;
+    margin-left: 12px;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+}
+
+.nav-link.nav-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.3);
+}
+
+/* Главная */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('баннер.jpg') no-repeat center center;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+/* Заголовок "Наши объекты" */
+.section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.2rem;
+    color: #333;
+    text-align: center;
+    margin: 0 auto 1.5rem;
+    padding: 0.5rem 0;
+}
+
+/* Карточки */
+.card {
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    background: white;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-weight: 600;
+    color: #007BFF;
+}
+
+.card-text {
+    color: #555;
+}
+
+/* Кнопки на странице */
+.btn-warning {
+    background: linear-gradient(90deg, #FFC107, #FFD700);
+    border: none;
+    color: #212529;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 16px 40px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(255, 193, 7, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn-warning:hover {
+    background: linear-gradient(90deg, #e0a800, #ffc107);
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(255, 193, 7, 0.4);
+}
+
+.btn-success {
+    background: linear-gradient(90deg, #28a745, #2ecc71);
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 16px 40px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(40, 167, 69, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+    background: linear-gradient(90deg, #218838, #27ae60);
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(40, 167, 69, 0.4);
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, #007BFF, #0056b3);
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 16px 40px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(90deg, #0056b3, #003d80);
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.4);
+}
+
+/* Подвал */
+footer {
+    background-color: #212529;
+    color: white;
+    padding: 0.8rem 0;
+    font-size: 0.9rem;
+}
+
+footer h5, footer h6 {
+    color: #FFC107;
+    font-weight: 600;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ccc;
+    text-decoration: underline;
+}
